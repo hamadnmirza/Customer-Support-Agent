@@ -19,7 +19,7 @@ ZENDESK_EMAIL = os.getenv("ZENDESK_EMAIL")
 ZENDESK_API_TOKEN = os.getenv("ZENDESK_API_TOKEN")
 
 # Initialize OpenAI client
-client = OpenAI(api_key=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)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # -------------------------
 # APP CONFIG
