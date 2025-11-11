@@ -1,0 +1,6 @@
+streamlit
+openai
+sentence-transformers
+faiss-cpu
+requests
+python-dotenv
