@@ -8,8 +8,7 @@ The AI-powered assistant for Customer Support teams.
 
 ## Overview
 
-Alex is an AI application that evaluates customer support replies for empathy, accuracy, completeness, and tone.  
-It suggests improved responses, learns from human approvals, and integrates seamlessly with Zendesk. 
+Alex is an intelligent QA assistant that reviews customer support responses in real-time, providing actionable feedback to maintain consistent quality across your team. Think of Alex as your tireless QA lead who never sleeps—evaluating empathy, accuracy, completeness, and tone while learning from your team's best practices. Alex was built to demonstrate: how AI can augment (not replace) human expertise in customer-facing operations while maintaining brand voice and quality standards.
 
 By combining LLM reasoning, memory feedback loops, and human supervision, Alex demonstrates how enterprises can achieve consistent, high-quality customer experiences while reducing manual review effort.
 
@@ -39,3 +38,34 @@ Alex demonstrates how autonomous QA and coaching can transform customer support 
 
 - Continuous Learning: persist approved suggestions to a database (Postgres/Supabase) and tune scoring logic.
 - Platform Integrations: extend support to Intercom, Freshdesk, and Salesforce Service Cloud.
+
+---
+## Getting Started
+
+- Prerequisites: OpenAI API key, Zendesk credentials, and some actual tickets on Zendesk.
+- Try it live by cloning this repository and running the app via streamlit. 
+
+--- 
+
+## Demo: 
+
+<img width="1926" height="994" alt="Screenshot 2025-11-12 at 21 28 26" src="https://github.com/user-attachments/assets/91844cb7-84ea-4e4f-9ce2-66f8404cbfce" />
+
+
+---
+
+## Technical Architecture: 
+Stack:
+- Frontend: Streamlit (rapid prototyping, easy deployment).
+- LLM: OpenAI GPT-4o-mini (cost-effective, fast responses).
+- Embeddings: sentence-transformers. 
+- Integration: Zendesk API v2.
+
+Key Design Decisions:
+- Bring-your-own-key model for security and cost control.
+- Stateless architecture for Streamlit Cloud compatibility.
+- Human-in-the-loop by design – AI suggests, humans decide.
+
+
+
+NOTE: This is a personal project built for experimenting with AI applications in customer support operations.
